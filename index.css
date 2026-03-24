@@ -9,6 +9,8 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: "Roboto", sans-serif;
 }
 
@@ -92,7 +94,7 @@ nav li a {
   position: relative;
   z-index: 1;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -147,7 +149,8 @@ html{
   background-color: #262626;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .hero-2 {
@@ -514,6 +517,9 @@ footer {
   padding: 40px 20px;
   max-width: 1300px;
   margin: 0 auto;
+  height: auto;
+  min-height: fit-content;
+  padding-bottom: 40px; /* give space for last text */
 }
 .hero-9a {
   margin: 50px 20px;
@@ -521,10 +527,9 @@ footer {
   flex-direction: column;
   gap: 0.5rem;
 }
-.hero-9a-item{
+.hero-9a-item {
   display: flex;
   gap: 10px;
-
 }
 .hero-9a a {
   text-decoration: none;
@@ -544,13 +549,13 @@ footer {
 }
 
 /*phone responsiveness*/
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .hero-6,
   .hero-7,
   .hero-5 {
     flex-direction: column;
   }
-  .hero-2{
+  .hero-2 {
     flex-direction: column;
     height: auto;
     gap: 10px;
@@ -562,15 +567,14 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 5px;
+    gap: 0px;
   }
   .hero-9 > div {
     flex: 1 0 100%;
     margin-bottom: 0;
   }
-  #about{
+  #about {
     height: auto;
-
   }
   #testimonials {
     height: fit-content;
@@ -638,7 +642,31 @@ footer {
   #top-1a {
     font-size: 10px;
   }
-  .hero-1a,.hero-1 {
+  .hero-1a,
+  .hero-1 {
     text-align: center;
+  }
+  .hero-9 {
+    height: auto;
+    min-height: fit-content;
+    padding-bottom: 300px;
+  }
+}
+/*tablet responsiveness*/
+@media (max-width: 1024px) {
+  .hero-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .hero-9 {
+    padding-bottom: 500px;
+  }
+  .nav-bar img {
+    position: relative;
+    top: 20px;
+    left: 310px;
   }
 }
