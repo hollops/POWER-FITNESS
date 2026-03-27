@@ -4,7 +4,7 @@ A modern, responsive gym website built using HTML, CSS, and basic JavaScript, de
 🚀 Live Preview
 [View Live Site](https://power-fitness-website.vercel.app)
 
-📌 Project Overview
+📌 Project Overview.
 Power Fitness is a fully responsive gym website designed with a mobile-first approach. The goal of this project is to create a clean, modern, and visually engaging fitness website using core front-end technologies.
 
 The design focuses on:
