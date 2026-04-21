@@ -43,7 +43,7 @@ header p {
 .nav-links {
   display: flex;
   list-style: none;
-  margin: 0 5px;
+  margin: 0px ;
   padding: 10px;
 }
 
@@ -77,8 +77,6 @@ nav li a {
 }
 
 .nav-bar {
-  display: block;
-  width: 10rem;
   text-align: center;
 }
 
@@ -610,6 +608,10 @@ footer {
   .hero-3 {
     grid-template-columns: 1fr;
   }
+  .hero-3a img{
+    width: 100%;
+
+  }
   .menu-icon {
     display: block;
   }
@@ -650,7 +652,7 @@ footer {
   .hero-9 {
     height: auto;
     min-height: fit-content;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
   }
 }
 /*tablet responsiveness*/
@@ -663,7 +665,7 @@ footer {
     gap: 5px;
   }
   .hero-9 {
-    padding-bottom: 00px;
+    padding-bottom: 0px;
   }
   .nav-bar img {
     position: relative;
